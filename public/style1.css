@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.freepik.com/free-vector/golden-glitter-blue-frame_53876-118777.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parent {
+    border: 1px solid black;
+    border-color: black;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.div-btn {
+    padding: 10px 120px;
+    font-size: 16px;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: white;
+}
+
+.div-login {
+    padding-left: 120px;
+}
+

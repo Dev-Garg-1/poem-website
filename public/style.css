@@ -1,0 +1,45 @@
+body {
+    margin: auto;
+    background-color: hsl(165, 100%, 50%);
+}
+
+.heading {
+    font-style: oblique;
+}
+
+.dashboard{
+    background-color: blue;
+    padding-left: 10px;
+    color: white;
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.container-items {
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.post-a  {
+    color: red;
+}
+
+.post {
+    background-color: yellow;
+}
+
+.post-u {
+    font-style: italic;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poem website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="dashboard">
+        <h4><a>Home</a></h4>
+        <div class="container">
+            <div class="container-items"><h4><a>About</a></h4></div>
+            <div class="container-items"><h4><a>Contact Us</a></h4></div>
+            <div class="container-items"><h4><a href="http://localhost:8080/posts/login">Login</a></h4></div>
+            <div class="container-items"><h4><a>Register</a></h4></div>
+        </div>
+    </div>
+
+    <h1 class="heading">poems</h1>
+
+    <% for(post of posts) { %>
+        <div class="post">
+            <h3 class="post-u">@<%= post.username %> </h3>
+            <h4><%= post.content %></h4>
+            <a class="post-a" href="http://localhost:8080/posts/<%=post.id%>">See in detail</a>
+            <a class="post-a" href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%= post.id%>?_method=Delete">
+                <button>Delete Post</button>
+            </form>
+            
+        </div>
+    <%}%>
+
+    <br />
+    <br />
+
+    <a class="post-a" style="font-size: 30px;" href="http://localhost:8080/posts/new">Create new post</a>
+</body>
+</html>
